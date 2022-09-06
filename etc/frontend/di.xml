@@ -9,4 +9,12 @@
         <plugin name="seo_optimize_images"
                 type="Hryvinskyi\SeoImageOptimizerFrontendUi\Controller\Result\OptimizeImages" sortOrder="-30" />
     </type>
+    <type name="Magento\Catalog\Block\Product\View\Gallery">
+        <plugin name="add_optimized_images_to_product_gallery"
+                type="Hryvinskyi\SeoImageOptimizerFrontendUi\Plugin\AddOptimizedImagesToProductGallery"/>
+    </type>
+    <type name="Magento\ConfigurableProduct\Block\Product\View\Type\Configurable">
+        <plugin name="add_optimized_images_to_product_gallery"
+                type="Hryvinskyi\SeoImageOptimizerFrontendUi\Plugin\AddOptimizedImagesToConfigurableProductGallery"/>
+    </type>
 </config>
